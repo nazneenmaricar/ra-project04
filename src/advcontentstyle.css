@@ -40,12 +40,17 @@ header div div img {height: 15px;}
               color: white;
               font-size: 1.8em}
 
-                  /*OUR STORY SECTION*/
+                  /*SINGLE ADVENTURE STORY SECTION*/
+
+.form-button {background-color: #18665e;
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              margin-bottom: 10px;
+              font-family: "Novecentosanswide-Normal";}
 
 
-
-
-/*FOOTER SECTION*/
+                      /*FOOTER SECTION*/
 footer {display: flex;
 padding: 20px;
 align-items: center;}
