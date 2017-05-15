@@ -40,7 +40,26 @@ header div div img {height: 15px;}
               color: white;
               font-size: 1.8em}
 
-                  /*OUR STORY SECTION*/
+                  /*OUR STORY AND TEAM SECTION*/
+
+.main {width: 60%;
+       margin: auto;
+       padding-bottom: 20px;}
+
+.main h2 { font-family: "Novecentosanswide-DemiBold";
+                font-size: 1.5em;
+                text-align: center;}
+
+.main p {font-family: "Merriweather-Light";
+              padding: 10px 0px;
+              line-height: 1.5em;
+               font-size: 13px;}
+
+.story-padding {padding: 40px 0px 20px 0px;}
+
+
+
+.team-padding {padding: 20px 0px 20px 0px;}
 
 
 

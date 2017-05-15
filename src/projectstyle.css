@@ -36,15 +36,18 @@ ul li {color: white;
 header div div img {height: 15px;}
 
               /*SHOP STUFF SECTION*/
+.main {width: 90%;
+       margin:  auto;}
 
 .shop-stuff {display: flex;
              flex-direction: column;
-             padding: 20px;
+             /*padding: 20px;*/
              align-items: center;}
 
 .shop-stuff h1 { font-family: "Novecentosanswide-Normal";
                 font-size: 1.5em;
-                padding: 20px;}
+                padding: 20px;
+              }
 
 .stuffs {display: flex;
         flex-direction: row;}
@@ -52,7 +55,7 @@ header div div img {height: 15px;}
 
 .stuff-cat {display: flex;
             flex-direction: column;
-            /*padding: 10px;*/
+            padding: 10px;
             border-style: solid;
             border-width: 2px 1px 1px 1px;
             border-color: #a3a2a2;
@@ -78,7 +81,7 @@ header div div img {height: 15px;}
 
 .journal {display: flex;
           flex-direction: column;
-          padding: 20px;
+          /*padding: 20px;*/
           align-items: center;}
 
 .journal h1 { font-family: "Novecentosanswide-Normal";
@@ -122,7 +125,7 @@ header div div img {height: 15px;}
 
 .adv {display: flex;
       flex-direction: column;
-      padding: 20px;
+      padding-bottom:  20px;
       align-items: center;}
 
 .adv  h1 {font-family: "Novecentosanswide-Normal";
@@ -135,7 +138,7 @@ header div div img {height: 15px;}
 .adv-log1 {
             background-image: /*linear-gradient(rgba(0, 0, 0, 0.3)),*/ url("../src/assets/images/adventure-photos/canoe-girl.jpg");*/
             height: 50vh;
-            width: 100%;
+            width: 50%;
             background-position: center;
             background-size:cover;
             background-repeat: no-repeat;
@@ -148,7 +151,6 @@ header div div img {height: 15px;}
 .adv-log2 {
             background-image: /*linear-gradient(rgba(0, 0, 0, 0.3)),*/ url("../src/assets/images/adventure-photos/beach-bonfire.jpg");
             height: 25vh;
-            width: 100%;
             background-position: center;
             background-size:cover;
             background-repeat: no-repeat;
@@ -204,7 +206,8 @@ header div div img {height: 15px;}
                 /*FOOTER SECTION*/
 footer {display: flex;
         padding: 20px;
-        align-items: center;}
+        align-items: center;
+      }
 
 .footer-image {
                 background-image: url("../src/assets/images/dark-wood.png");

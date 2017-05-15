@@ -16,7 +16,7 @@
         /*HEADER SECTIOM (BANNER AND NAV)*/
 
 .banner-image {
-                background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url("../src/assets/images/about-hero.jpg");
+                background-image: url("../src/assets/images/adventure-photos/night-sky.jpg");
                 height: 70vh;
                 background-position: bottom;
                 background-size:cover;
@@ -40,7 +40,31 @@ header div div img {height: 15px;}
               color: white;
               font-size: 1.8em}
 
-                  /*SINGLE ADVENTURE STORY SECTION*/
+              /*SINGLE ADVENTURE STORY SECTION*/
+.main {width: 60%;
+       margin: auto;}
+
+.adv-blog {display: flex;
+           flex-direction: column;}
+
+.adv-blog h2 {font-family: "Novecentosanswide-DemiBold";
+              font-size: 30px;
+              padding: 40px 0px 20px 0px;}
+
+.adv-blog h4 {font-family: "Novecentosanswide-Normal";
+              padding: 0px 0px 20px 0px;}
+
+.adv-blog p {font-family: "Merriweather-Light";
+              padding: 10px 0px;
+              line-height: 1.5em;
+               font-size: 13px;}
+
+            /*FORM SECTION  */
+.blog-entry h2 {font-family: "Novecentosanswide-DemiBold";
+              font-size: 20px;
+              padding: 40px 0px 20px 0px;}
+
+.detail {padding-bottom: 30px;}
 
 .form-button {background-color: #18665e;
               border: none;
