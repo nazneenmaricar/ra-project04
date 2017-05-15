@@ -1,0 +1,237 @@
+* {box-sizing: border-box;
+   padding: 0;
+   margin: 0;}
+
+.flex {display: flex;}
+.just-cont-cent {justify-content: center;}
+.just-cont-between {justify-content: space-between;}
+.just-space-around {justify-content: space-around;}
+.align-item-cent {align-items: center;}
+.flex-end {align-content: flex-end;}
+.dir-col {flex-direction: column;}
+.dir-row {flex-direction: row;}
+.align-cont-cent {align-content: center;}
+.flex-grow-1 {flex-grow: 1;}
+
+        /*HEADER SECTIOM (BANNER AND NAV)*/
+
+.banner-image {
+                background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url("../src/assets/images/logos/inhabitent-logo-full.svg"), url("../src/assets/images/home-hero.jpg");
+                height: 70vh;
+                background-position: center, center, center;
+                background-size: contain, 20vh, cover;
+                background-repeat: no-repeat;}
+
+header div div {display: flex;
+                justify-content: space-between;
+                padding: 10px 30px;}
+
+ul {display: flex;}
+
+ul li {color: white;
+       padding-right: 15px;
+       font-family: "Novecentosanswide-Normal";
+       font-size: 0.8em;}
+
+header div div img {height: 15px;}
+
+              /*SHOP STUFF SECTION*/
+
+.shop-stuff {display: flex;
+             flex-direction: column;
+             padding: 20px;
+             align-items: center;}
+
+.shop-stuff h1 { font-family: "Novecentosanswide-Normal";
+                font-size: 1.5em;
+                padding: 20px;}
+
+.stuffs {display: flex;
+        flex-direction: row;}
+
+
+.stuff-cat {display: flex;
+            flex-direction: column;
+            /*padding: 10px;*/
+            border-style: solid;
+            border-width: 2px 1px 1px 1px;
+            border-color: #a3a2a2;
+            align-items: center;
+            margin: 5px;
+            width: 25%;}
+
+.stuff-cat img {width: 12vh;
+                padding: 10px;}
+
+.stuff-cat p {font-family: "Merriweather-Light";
+              padding: 10px 0px;
+              text-align: center;}
+
+.shop-button {background-color: #18665e;
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              margin-bottom: 10px;
+              font-family: "Novecentosanswide-Normal";}
+
+          /*INHABITENT JOURNAL SECTION*/
+
+.journal {display: flex;
+          flex-direction: column;
+          padding: 20px;
+          align-items: center;}
+
+.journal h1 { font-family: "Novecentosanswide-Normal";
+              font-size: 1.5em;
+              padding: 20px;}
+
+.journal-entry {display: flex;
+                flex-direction: row;}
+
+.entry {border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #a3a2a2;
+        width: 35%;
+        margin: 5px;}
+
+.entry-img {height:30vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 3px solid #a3a2a2;}
+
+.entry-content { padding-left: 10px;}
+
+.entry-content p {font-family: "Merriweather-Light";
+                  font-size: 10px;
+                  padding: 10px 0px 5px 0px;}
+
+.entry-content h2 {font-family: "Novecentosanswide-DemiBold";
+                   font-size: 20px;
+                   padding-bottom: 10px;}
+
+.entry-button {border: 1px solid black;
+               background-color: white;
+               color: black;
+               padding: 10px 20px;
+               margin-bottom: 10px;
+               font-family: "Novecentosanswide-Normal";}
+
+
+               /*LATEST ADVANTURE SECTION*/
+
+.adv {display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;}
+
+.adv  h1 {font-family: "Novecentosanswide-Normal";
+          font-size: 1.5em;
+          padding: 20px;}
+
+.adv-cat1 {display: flex;
+          margin: 5px;}
+
+.adv-log1 {
+            background-image: /*linear-gradient(rgba(0, 0, 0, 0.3)),*/ url("../src/assets/images/adventure-photos/canoe-girl.jpg");*/
+            height: 50vh;
+            width: 100%;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin: 0px 5px 0px 0px;
+            padding: 30px 20px; }
+
+.adv-cat2 { display: flex;
+            flex-direction: column;}
+
+.adv-log2 {
+            background-image: /*linear-gradient(rgba(0, 0, 0, 0.3)),*/ url("../src/assets/images/adventure-photos/beach-bonfire.jpg");
+            height: 25vh;
+            width: 100%;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin: 0px 0px 5px 5px;
+            padding: 30px 20px;}
+
+.adv-cat3 { display: flex;
+            flex-direction: row;}
+
+.adv-log3 {
+            background-image: /*linear-gradient(rgba(0, 0, 0, 0.3)),*/ url("../src/assets/images/adventure-photos/mountain-hikers.jpg");
+            height: 25vh;
+            width: 100%;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin: 5px 5px 0px 5px;
+            padding: 30px 20px;}
+
+.adv-log4 {
+            background-image: /*linear-gradient(rgba(0, 0, 0, 0.3)),*/ url("../src/assets/images/adventure-photos/night-sky.jpg");
+            height: 25vh;
+            width: 100%;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin: 5px 0px 0px 5px;
+            padding: 30px 20px;}
+
+.adv-p {font-family: "Merriweather-Light";
+        font-size:20px;
+        color: white;
+        padding: 10px 0px 30px 0px;}
+
+.adv-button {background: none;
+             border: 1px solid white;
+             color: white;
+             padding: 10px 20px;
+             margin-bottom: 10px;
+             font-family: "Novecentosanswide-Normal";}
+
+.more-adv-button {background-color: #18665e;
+                  color: white;
+                  border: none;
+                  padding: 10px 20px;
+                  margin-bottom: 10px;
+                  font-family: "Novecentosanswide-Normal";}
+
+.adv-button-more { display: flex;
+                  align-self: flex-start;
+                  margin: 20px 0px 0px 5px;}
+
+                /*FOOTER SECTION*/
+footer {display: flex;
+        padding: 20px;
+        align-items: center;}
+
+.footer-image {
+                background-image: url("../src/assets/images/dark-wood.png");
+                height: 30vh;
+                background-size: cover;
+                background-repeat: no-repeat;}
+/*
+.info p {color: white;
+         line-height: 2em;}
+
+.info h4 {font-family: "Novecentosanswide-DemiBold";
+                  color: #c97f31;
+                  line-height: 2em;}*/
+
+                    /*FONT FAMILY*/
+
+@font-face {font-family: "Merriweather-Bold";
+            src: url("../src/assets/fonts/Merriweather/Merriweather-Bold.ttf");}
+
+@font-face {font-family: "Merriweather-BoldItalic";
+            src: url("../src/assets/fonts/Merriweather/Merriweather-BoldTtalic.ttf");}
+@font-face {font-family: "Merriweather-Light";
+            src: url("../src/assets/fonts/Merriweather/Merriweather-Light.ttf");}
+@font-face {font-family: "Merriweather-Italic";
+            src: url("../src/assets/fonts/Merriweather/Merriweather-LightItalic.ttf");}s
+
+@font-face {font-family: "Novecentosanswide-DemiBold";
+            src: url("../src/assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf");}
+@font-face {font-family: "Novecentosanswide-Normal";
+            src: url("../src/assets/fonts/Novecento/Novecentosanswide-Normal.ttf");}
