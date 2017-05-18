@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { AppRouter} from './app-router';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -9,6 +10,10 @@ import { AdventureBlogComponent } from './adventure-blog/adventure-blog.componen
 import { HomepageComponent } from './homepage/homepage.component';
 import { JournalViewComponent } from './journal-view/journal-view.component';
 import { SingleAdventurePostComponent } from './single-adventure-post/single-adventure-post.component';
+import { JournalDataService } from './service/journal-data.service';
+import { JournalPost } from './service/journal-post';
+
+
 
 @NgModule({
   declarations: [
@@ -22,9 +27,10 @@ import { SingleAdventurePostComponent } from './single-adventure-post/single-adv
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRouter
   ],
-  providers: [],
+  providers: [JournalDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

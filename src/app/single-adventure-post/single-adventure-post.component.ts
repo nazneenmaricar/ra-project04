@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-single-adventure-post',
   templateUrl: './single-adventure-post.component.html',
   // styleUrls: ['../single-adventure-post.component.css']
-  styleUrls: ['./advcontentstyle.css']
+  styleUrls: ['../../advcontentstyle.css']
 })
-export class SingleAdventurePostComponent implements OnInit {
+export class SingleAdventurePostComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
+  
 }
