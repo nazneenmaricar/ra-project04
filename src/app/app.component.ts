@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['../aboutpagestyle.css', '../advcontentstyle.css', '../projectstyle.css' ]
 })
 export class AppComponent {
-  title = 'app works!';
+  // title = 'app works!';
 }

@@ -1,0 +1,61 @@
+
+<!--JOURNAL LIST-->
+
+<content class="flex">
+  <section class="flex dir-col left-side">
+    <!-- <div id="the-list"></div> -->
+
+    <div>
+      <h1>{{journalList.allJournals[0]['title']}}</h1>
+      <h2>{{journalList.allJournals[0]['date']}}</h2>
+      <p>{{(journalList.allJournals[0]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[0].id]" routerLinkActive="active">[...]</a></p>
+    </div>
+
+    <div>
+      <h1>{{journalList.allJournals[1]['title']}}</h1>
+      <h2>{{journalList.allJournals[1]['date']}}</h2>
+      <p>{{(journalList.allJournals[1]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[1].id]" routerLinkActive="active">[...]</a></p>
+    </div>
+
+    <div>
+      <h1>{{journalList.allJournals[2]['title']}}</h1>
+      <h2>{{journalList.allJournals[2]['date']}}</h2>
+      <p>{{(journalList.allJournals[2]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[2].id]" routerLinkActive="active">[...]</a></p>
+    </div>
+
+    <div>
+      <h1>{{journalList.allJournals[3]['title']}}</h1>
+      <h2>{{journalList.allJournals[3]['date']}}</h2>
+      <p>{{(journalList.allJournals[3]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[3].id]" routerLinkActive="active">[...]</a></p>
+    </div>
+
+    <div>
+      <h1>{{journalList.allJournals[4]['title']}}</h1>
+      <h2>{{journalList.allJournals[4]['date']}}</h2>
+      <p>{{(journalList.allJournals[4]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[4].id]" routerLinkActive="active">[...]</a></p>
+    </div>
+
+  </section>
+
+  <!--ASIDE SECTION-->
+
+  <aside>
+    <div class="info">
+      <h4> CONTACT INFO </h4>
+      <p><i class="fa fa-phone" aria-hidden="true"></i>778-456-7891</p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i>info@inhabitent.com</p>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i>1490 W Broadway <br> Vancouver, BC V6H1H5 </p>
+    </div>
+
+    <div class="info">
+      <h4>BUSINESS HOURS</h4>
+      <p> Monday-Friday: 9am to 5pm </p>
+      <p> Saturday: 10am to 2pm </p>
+      <p> Sunday: Closed </p>
+    </div>
+
+    <div class="info">
+      <h4>ARCHIVES</h4>
+    </div>
+  </aside>
+</content>

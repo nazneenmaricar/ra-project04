@@ -1,0 +1,23 @@
+<section class="blog-entry">
+  <h2> NEW BLOG  ENTRY </h2>
+  <form class="detail" id="apiForm" method="post" #apiForm="ngForm">
+
+    Title: <input type="text" name="title" id="title"  placeholder="Title Of The Post" size="50" value="Raft the Rogue River"> <br><br>
+
+    <!-- Author:  <input type="text" name="author" id="author"  placeholder="Name of The Author" size="50" value="Sarah"> <br><br> -->
+
+    Image:  <input type="text" name="image" id="image" value="http://www.fitworx.com/wp-content/uploads/2016/10/sorry-image-not-available.png" placeholder="Image Url" size="50"> <br><br>
+
+    Content: <br>
+    <textarea rows="10" cols="55" name="content" id="content" value="Raft the Rogue River by day and stay in a comfortable lodge each night. Hosted by ROW Adventures">
+    </textarea> <br><br>
+
+  <select multiple id="categories" name = "categories"
+          (change)="parseSelectedValue($event.target.value)">
+    <option>--select--</option>
+    <option *ngFor="let name of categories"
+            [value]="name">{{name}}</option>
+  </select>    <br> <br>
+    <button type="button" name="submit" class="form-button" id="submit" value="submit" (click)="submitForm($event)">Submit Entry </button>
+  </form>
+</section>

@@ -1,32 +1,40 @@
-<section class="adv">
+<section class="adv" *ngIf="journalList">
   <h1> LATEST ADVANTURES </h1>
 
     <div class="adv-cat1">
-      <div class="adv-log1 flex-grow-1">
-        <p class="adv-p">Getting Back To Nature in a Canoe</p>
-        <button type="button" name="button" class="adv-button"> READ MORE </button>
+
+      <div class="adv-log1 flex-grow-1" *ngIf="journalList">
+        <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[0].title}} </p>
+        <button type="button" name="button" class="adv-button" [routerLink] = "['./single-adventure-post', journalList.allJournals[0].id]" routerLinkActive="active"> READ MORE  </button>
       </div>
+
       <div class="adv-cat2">
-        <div class="adv-log2 flex-grow-1">
-          <p class="adv-p">A Night with Friends at the  Beach</p>
-          <button type="button" name="button" class="adv-button"> READ MORE </button>
+
+        <div class="adv-log2 flex-grow-1" *ngIf="journalList">
+          <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[1].title}}</p>
+          <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[1].id]" routerLinkActive="active"> READ MORE </button>
         </div>
 
         <div class="adv-cat3 flex-grow-1">
-          <div class="adv-log3 flex-grow-1">
-            <p class="adv-p">Taking in the View at Big Mountain</p>
-            <button type="button" name="button" class="adv-button"> READ MORE </button>
+
+          <div class="adv-log3 flex-grow-1" *ngIf="journalList">
+            <p class="adv-p" *ngIf="journalList">{{journalList.allJournals[1].title}}</p>
+            <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[2].id]" routerLinkActive="active"> READ MORE </button>
           </div>
 
-          <div class="adv-log4 flex-grow-1">
-            <p class="adv-p">Star-Gazing at the Night Sky</p>
-          <button type="button" name="button" class="adv-button"><a href="/single-adventure-post">  READ MORE </a> </button> 
+          <div class="adv-log4 flex-grow-1" *ngIf="journalList">
+            <p class="adv-p" *ngIf="journalList">{{journalList.allJournals[2].title}}</p>
+          <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[3].id]" routerLinkActive="active"> READ MORE </button>
           </div>
+
         </div>
+
       </div>
+
     </div>
 
     <div class="adv-button-more">
-      <button type="button" name="button" class="more-adv-button"> MORE ADVENTURES </button>
+      <button type="button" name="button" class="more-adv-button" [routerLink] = "['/adventure-list']" routerLinkActive="active"> MORE ADVENTURES </button>
+      <!-- connect it to journal post list -->
   </div>
 </section>
