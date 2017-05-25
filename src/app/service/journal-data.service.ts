@@ -39,7 +39,7 @@ export class JournalDataService {
        console.log(res[`_body`]);
        const x = (res[`_body`]);
        const status = x.indexOf("post_created");
-       //indexof with a value 0 is true and -1 is false 
+       //indexof with a value 0 is true and -1 is false
        if (status >= 0){
          alert("Post has been successfully created!");
         }

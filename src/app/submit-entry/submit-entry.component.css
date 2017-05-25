@@ -1,0 +1,16 @@
+/*FORM SECTION  */
+.blog-entry h2 {font-family: "Novecentosanswide-DemiBold";
+  font-size: 20px;
+  padding: 40px 0px 20px 0px;
+  color: #18665e;}
+
+.detail {padding-bottom: 30px;}
+
+.form-button {background-color: #18665e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-family: "Novecentosanswide-Normal";}
+
+.title-input { padding-left: 10px;}

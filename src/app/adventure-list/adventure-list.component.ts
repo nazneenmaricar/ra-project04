@@ -46,7 +46,7 @@ export class AdventureListComponent implements OnInit {
           newJournal.id= myList[entry]['ID'];
           newJournal.title= myList[entry]['title'].replace(/&#039;/g, `'`);
           newJournal.content= myList[entry]['content'].replace(/&#039;/g, `'`);
-          newJournal.category= myList[entry]['category'];
+          newJournal.categories= myList[entry]['categories'];
           newJournal.image=myList[entry]['image'];
           newJournal.date= myList[entry]['date'];
           newJournal.author= myList[entry]['author'];
@@ -62,5 +62,6 @@ export class AdventureListComponent implements OnInit {
           return newList;
         }
         const resolveDetails: any = Promise.resolve(myPromiseOfJournals.then(extractDataFromPromise));
+        //.then( (active) => { this.journalList = active } )
 }
 }

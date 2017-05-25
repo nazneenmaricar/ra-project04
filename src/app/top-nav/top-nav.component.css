@@ -14,47 +14,23 @@
 .flex-grow-1 {flex-grow: 1;}
 
         /*HEADER SECTIOM (BANNER AND NAV)*/
+/*header {background-color: grey;}*/
 
 header div div {display: flex;
                 justify-content: space-between;
-                padding: 10px 30px;}
+                padding: 10px 30px;
+                border-bottom: solid 1px grey;}
 
-ul {display: flex;}
+ul {display: flex;
+    list-style-type: none;}
 
-ul li {color: white;
+ul li {color: #137c6d;
        padding-right: 15px;
        font-family: "Novecentosanswide-Normal";
-       font-size: 0.8em;}
+       font-size: 0.8em;
+        text-decoration: none;}
 
 header div div img {height: 15px;}
-
-.header-text {display: flex;
-              justify-content: center;
-              color: white;
-              font-size: 1.8em}
-
-              /*SINGLE ADVENTURE STORY SECTION*/
-.main {padding-top: 40px;
-       width: 60%;
-       margin: auto;}
-
-.adv-blog {display: flex;
-           flex-direction: column;}
-
-.adv-blog h2 {font-family: "Novecentosanswide-DemiBold";
-              font-size: 30px;
-              padding: 40px 0px 20px 0px;}
-
-.adv-blog h4 {font-family: "Novecentosanswide-Normal";
-              padding: 0px 0px 20px 0px;}
-
-.adv-blog p {font-family: "Merriweather-Light";
-              padding: 10px 0px;
-              line-height: 1.5em;
-               font-size: 13px;}
-
-
-                    /*FONT FAMILY*/
 
 @font-face {font-family: "Merriweather-Bold";
             src: url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf");}

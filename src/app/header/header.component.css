@@ -26,7 +26,8 @@ header div div {display: flex;
         justify-content: space-between;
         padding: 10px 30px;}
 
-ul {display: flex;}
+ul {display: flex;
+    list-style-type: none;}
 
 ul li {color: white;
 padding-right: 15px;

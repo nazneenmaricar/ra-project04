@@ -1,38 +1,50 @@
-
+<app-top-nav> </app-top-nav>
 <!--JOURNAL LIST-->
 
 <content class="flex">
-  <section class="flex dir-col left-side">
+  <section class="flex dir-col left-side border " *ngIf='journalList'>
     <!-- <div id="the-list"></div> -->
 
-    <div>
+    <div *ngIf='journalList' class="cell">
+      <!-- <img [attr.src]="journalList.allJournals[0].image" width="400" height="400px"> -->
       <h1>{{journalList.allJournals[0]['title']}}</h1>
       <h2>{{journalList.allJournals[0]['date']}}</h2>
-      <p>{{(journalList.allJournals[0]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[0].id]" routerLinkActive="active">[...]</a></p>
+      <p>{{journalList.allJournals[0]['content'].substring(0,150)}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[0].id]">[Read More]</a></p>
     </div>
 
-    <div>
+     <div *ngIf='journalList' class="cell">
+      <!-- <img [attr.src]="journalList.allJournals[1].image" width="400" height="400px"> -->
       <h1>{{journalList.allJournals[1]['title']}}</h1>
       <h2>{{journalList.allJournals[1]['date']}}</h2>
-      <p>{{(journalList.allJournals[1]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[1].id]" routerLinkActive="active">[...]</a></p>
+      <p>{{journalList.allJournals[1]['content'].substring(0,150)}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[1].id]">[Read More]</a></p>
     </div>
 
-    <div>
+    <div *ngIf='journalList' class="cell">
+      <!-- <img [attr.src]="journalList.allJournals[2].image" width="400" height="400px"> -->
       <h1>{{journalList.allJournals[2]['title']}}</h1>
       <h2>{{journalList.allJournals[2]['date']}}</h2>
-      <p>{{(journalList.allJournals[2]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[2].id]" routerLinkActive="active">[...]</a></p>
+      <p>{{journalList.allJournals[2]['content'].substring(0,150)}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[2].id]">[Read More]</a></p>
     </div>
 
-    <div>
+    <div *ngIf='journalList' class="cell">
+      <!-- <img [attr.src]="journalList.allJournals[3].image" width="400" height="400px"> -->
       <h1>{{journalList.allJournals[3]['title']}}</h1>
       <h2>{{journalList.allJournals[3]['date']}}</h2>
-      <p>{{(journalList.allJournals[3]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[3].id]" routerLinkActive="active">[...]</a></p>
+      <p>{{journalList.allJournals[3]['content'].substring(0,150)}}<a [routerLink]="['../single-adventure-post',journalList.allJournals[3].id]">[Read More]</a></p>
     </div>
 
-    <div>
+    <div *ngIf='journalList' class="cell">
+      <!-- <img [attr.src]="journalList.allJournals[4].image" width="400" height="400px"> -->
       <h1>{{journalList.allJournals[4]['title']}}</h1>
       <h2>{{journalList.allJournals[4]['date']}}</h2>
-      <p>{{(journalList.allJournals[4]['content'])}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[4].id]" routerLinkActive="active">[...]</a></p>
+      <p>{{journalList.allJournals[4]['content'].substring(0,150)}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[4].id]">[Read More]</a></p>
+    </div>
+
+    <div *ngIf='journalList' class="cell">
+      <!-- <img [attr.src]="journalList.allJournals[5].image" width="400" height="400px"> -->
+      <h1>{{journalList.allJournals[5]['title']}}</h1>
+      <h2>{{journalList.allJournals[5]['date']}}</h2>
+      <p>{{journalList.allJournals[5]['content'].substring(0,150)}}<a [routerLink]="['/single-adventure-post',journalList.allJournals[5].id]">[Read More]</a></p>
     </div>
 
   </section>
@@ -44,7 +56,7 @@
       <h4> CONTACT INFO </h4>
       <p><i class="fa fa-phone" aria-hidden="true"></i>778-456-7891</p>
       <p><i class="fa fa-envelope" aria-hidden="true"></i>info@inhabitent.com</p>
-      <p><i class="fa fa-map-marker" aria-hidden="true"></i>1490 W Broadway <br> Vancouver, BC V6H1H5 </p>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i>1490 W Broadway Vancouver, BC V6H1H5 </p>
     </div>
 
     <div class="info">

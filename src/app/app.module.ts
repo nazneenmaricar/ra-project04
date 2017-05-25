@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AppRouter} from './app-router';
+import { AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -17,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { JournalComponent } from './journal/journal.component';
 import { AdventureListComponent } from './adventure-list/adventure-list.component';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 
 
@@ -33,13 +34,14 @@ import { AdventureListComponent } from './adventure-list/adventure-list.componen
     HeaderComponent,
     FooterComponent,
     JournalComponent,
-    AdventureListComponent
+    AdventureListComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRouter
+    AppRoutingModule
   ],
   providers: [JournalDataService],
   bootstrap: [AppComponent]

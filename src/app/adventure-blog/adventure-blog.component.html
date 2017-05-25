@@ -4,26 +4,32 @@
     <div class="adv-cat1">
 
       <div class="adv-log1 flex-grow-1" *ngIf="journalList">
+        <!-- <img
+        [attr.src]="journalList.allJournals[0].image"  *ngIf="journalList" alt=""> -->
         <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[0].title}} </p>
-        <button type="button" name="button" class="adv-button" [routerLink] = "['./single-adventure-post', journalList.allJournals[0].id]" routerLinkActive="active"> READ MORE  </button>
+        <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[0].id]" routerLinkActive="active"> READ MORE  </button>
       </div>
 
-      <div class="adv-cat2">
-
+      <div class="adv-cat2" *ngIf="journalList">
         <div class="adv-log2 flex-grow-1" *ngIf="journalList">
-          <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[1].title}}</p>
+          <!-- <img [attr.src]="journalList.allJournals[1].image" *ngIf="journalList" alt=""> -->
+          <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[1].title}}
+          </p>
           <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[1].id]" routerLinkActive="active"> READ MORE </button>
         </div>
 
-        <div class="adv-cat3 flex-grow-1">
-
+        <div class="adv-cat3 flex-grow-1" *ngIf="journalList">
           <div class="adv-log3 flex-grow-1" *ngIf="journalList">
-            <p class="adv-p" *ngIf="journalList">{{journalList.allJournals[1].title}}</p>
+            <!-- <img [attr.src]="journalList.allJournals[2].image" *ngIf="journalList" alt=""> -->
+            <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[2].title}}
+            </p>
             <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[2].id]" routerLinkActive="active"> READ MORE </button>
           </div>
 
           <div class="adv-log4 flex-grow-1" *ngIf="journalList">
-            <p class="adv-p" *ngIf="journalList">{{journalList.allJournals[2].title}}</p>
+            <!-- <img [attr.src]="journalList.allJournals[3].image" *ngIf="journalList" alt=""> -->
+            <p class="adv-p" *ngIf="journalList"> {{journalList.allJournals[3].title}}
+            </p>
           <button type="button" name="button" class="adv-button" [routerLink] = "['/single-adventure-post', journalList.allJournals[3].id]" routerLinkActive="active"> READ MORE </button>
           </div>
 

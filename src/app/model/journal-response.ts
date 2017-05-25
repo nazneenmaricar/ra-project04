@@ -1,8 +1,7 @@
-import { IJournalResponse } from './ijournal-response';
 import { Journal } from './journal';
 import { JournalList } from './journal.list';
 
-export class JournalResponse  implements IJournalResponse  {
+export class JournalResponse  {
 
   allJournals: Journal[];
   count: number;

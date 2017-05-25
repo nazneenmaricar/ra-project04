@@ -33,24 +33,43 @@ header div div img {height: 15px;}
 
             /*JOURNAL LIST SECTION*/
 
-.left-side { width: 70%;
+.left-side { width: 80%;
              margin: auto;
              padding: 40px}
 
+.cell {padding: 20px}
+
+.cell p { padding: 5px;}
+
+ h1{ font-family: "Novecento-Normal.ttf";
+     font-size: 1.5em;
+     padding: 5px;
+     color: #137c6d;}
+
+ h2{ font-family: "Novecento-DemiBold.ttf";
+     font-size: 1em;
+     line-height: 0.8em;
+     padding: 5px;
+     color: #137c6d;}
+
+.border { border-right: 1px solid grey;}
                     /*ASIDE SECTION*/
 
-aside { width: 30%;
-        padding: 40px 0px 40px 40px;}
+aside { width: 20%;
+        padding: 40px 0px 40px 40px;
+        margin-left: solid 10px grey;}
 
 i {padding:5px 5px 5px 0px;}
 
 .p-padding {padding: 0px 5px 5px 5px; }
 
 .info p {color: black;
-         line-height: 2em;}
+         line-height: 2em;
+          padding-bottom: 5px;}
 
 .info h4 {font-family: "Novecentosanswide-DemiBold";
-          line-height: 2em;}*/
+          line-height: 2em;
+          padding-bottom: 5px; }
 
           /*FOOTER SECTION*/
 footer {display: flex;

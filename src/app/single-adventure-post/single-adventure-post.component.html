@@ -1,18 +1,13 @@
 <!--SINGLE ADVENTURE STORY SECTION-->
+<app-top-nav> </app-top-nav>
 
 <section class="main">
-  <article class="adv-blog">
-      <img src="">
-      <!-- {{currentBLog.image}} -->
-      <!-- <p> {{currentBLog.image}} </p> -->
-      <h2> </h2>
-      <!-- {{currentBlog.title} } -->
-      <h4> </h4>
-      <!-- {{currentBlog.auhor}}  -->
-      <p>  </p>
-      <!-- {{currentBlog.date}} -->
-      <p>  </p>
-      <!-- {{currentBlog.content}} -->
+  <article class="adv-blog" *ngIf='currentJournal'>
+      <img [attr.src]="currentJournal.image" height="300px" width="100%">
+      <h2> {{ currentJournal.title }} </h2>
+      <h4> {{ currentJournal.author }} </h4>
+      <p> {{ currentJournal.date }} </p>
+      <p> {{ currentJournal.content }} </p>
   </article>
 
             <!--FORM SECTION-->

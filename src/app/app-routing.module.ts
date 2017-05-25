@@ -1,5 +1,5 @@
 import { NgModule} from '@angular/core';
-import { RouterModule, Routes, ActivatedRoute, Router, Params } from '@angular/router';
+import { RouterModule, Routes, ActivatedRoute, Params } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -9,7 +9,7 @@ import { SingleAdventurePostComponent } from './single-adventure-post/single-adv
 import { AdventureListComponent } from './adventure-list/adventure-list.component';
 
 
-const router: Routes =[
+const routes: Routes =[
   { path: '', redirectTo: 'homepage', pathMatch: 'full'},
   { path: 'about', component: AboutComponent},
   { path: 'adventure-blog', component: AdventureBlogComponent},
@@ -20,8 +20,8 @@ const router: Routes =[
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(router) ],
+  imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
 
-export class AppRouter {}
+export class AppRoutingModule {}

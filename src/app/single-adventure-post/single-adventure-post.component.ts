@@ -18,7 +18,7 @@ export class SingleAdventurePostComponent implements OnInit {
   currentJournal: Journal;
   journalList: JournalResponse;
   currentpost:Journal;
-  blogID: number
+  blogID: number;
 
   constructor(private journalDataService: JournalDataService, private router: Router, private active: ActivatedRoute) {
 
@@ -27,12 +27,10 @@ export class SingleAdventurePostComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // let xyz = this.active;
-    // console.log(xyz);
-    // let xyzParams: Params = xyz.params;
-    // let currentID= xyzParams['_value'] ['id'];
-    // // console.log(_value);
-    // this.blogID = currentID;
+    const currentID = this.active.params ['_value'] ['id'];
+    //displays the current journal id
+    console.log(currentID);
+    const blogID = currentID;
 
     //console.log("Nazneen");
     const myPromiseOfJournals: any = this.journalDataService.getJournals();
@@ -58,7 +56,7 @@ export class SingleAdventurePostComponent implements OnInit {
           newJournal.id= myList[entry]['ID'];
           newJournal.title= myList[entry]['title'].replace(/&#039;/g, `'`);
           newJournal.content= myList[entry]['content'].replace(/&#039;/g, `'`);
-          newJournal.category= myList[entry]['category'];
+          newJournal.categories= myList[entry]['categories'];
           newJournal.image=myList[entry]['image'];
           newJournal.date= myList[entry]['date'];
           newJournal.author= myList[entry]['author'];
@@ -74,30 +72,30 @@ export class SingleAdventurePostComponent implements OnInit {
       return newList;
     }
 
-    // const matchID: Function = () => {
-    //   let q = (x) => {
-    //     console.log(this.journalID);
-    //     console.log(x.id);
-    //     console.log('------------------');
-    //     let k =  parseInt(x.id, 10) ==  this.journalID;
-    //     //console.log(k);
-    //     return k;
-    //   };
-    //   let newArray = this.journalEntries.allJournals.find(q);
-    //   console.log("LOGGING");
-    //   console.log(this.journalEntries.allJournals);
-    //   console.log(this.journalID);
-    //   console.log(newArray);
-    //   //this.currentAdventure = newArray;
-    //
-    //   this.someOtherFunction(newArray);
-    //   //this.renderView(newArray);
-    //    //return newArray;
+    const syncID: Function = () => {
+      const value:any = (a) => {
+        console.log("naz");
+        console.log(a.id);
+        const aValue =  parseInt(a.id, 10) ==  this.blogID;
+        console.log(a);
+        return a;
+      };
+      const newArray = this.journalList.allJournals.find(value);
+      console.log("Sarah");
+      console.log(this.journalList.allJournals);
+      console.log(this.blogID);
 
-  //   const resolveData: any = Promise.resolve(myPromiseOfJournals.then(extractDataFromPromise)); //addsmetinghere??
-  //   }
-  //   someOtherFunction(newArray){
-  //   this.currentAdventure = newArray;
-  // }
-}
+      // console.log(newArray);
+      //this.currentAdventure = newArray;
+
+      this.newJournal(newArray);
+      //this.renderView(newArray);
+       //return newArray;}
+     }
+    const resolveData: any = Promise.resolve(myPromiseOfJournals.then(extractDataFromPromise).then( (active) => { this.journalList = active } ).then(syncID)); //addsmetinghere??
+
+    }
+    newJournal(newArray){
+    this.currentJournal = newArray;
+  }
 }
