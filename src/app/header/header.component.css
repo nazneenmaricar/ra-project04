@@ -26,6 +26,15 @@ header div div {display: flex;
         justify-content: space-between;
         padding: 10px 30px;}
 
+a:visited{text-decoration: none;
+          color: #c97f31;}
+
+a:active{text-decoration: none;
+         color: #c97f31;}
+
+a:link{text-decoration: none;
+       color: #c97f31;}
+
 ul {display: flex;
     list-style-type: none;}
 

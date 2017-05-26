@@ -24,13 +24,15 @@ background-image: url("../../assets/images/dark-wood.png");
 height: 30vh;
 background-size: cover;
 background-repeat: no-repeat;}
-/*
+
 .info p {color: white;
 line-height: 2em;}
 
 .info h4 {font-family: "Novecentosanswide-DemiBold";
   color: #c97f31;
-  line-height: 2em;}*/
+  line-height: 2em;}
+
+  .text-white {color: white;}
 
     /*FONT FAMILY*/
 

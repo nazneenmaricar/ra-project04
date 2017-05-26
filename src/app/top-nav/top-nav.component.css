@@ -32,6 +32,16 @@ ul li {color: #137c6d;
 
 header div div img {height: 15px;}
 
+a:visited{text-decoration: none;
+          color: #c97f31;}
+
+a:active{text-decoration: none;
+         color: #c97f31;}
+
+a:link{text-decoration: none;
+       color: #c97f31;}
+
+
 @font-face {font-family: "Merriweather-Bold";
             src: url("../../assets/fonts/Merriweather/Merriweather-Bold.ttf");}
 
