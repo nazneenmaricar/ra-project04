@@ -1,28 +1,9 @@
-# RaProject04
+RaProject04- (Inhabitant Blog Post)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+This project was generated with Angular CLI
 
-## Development server
+  -Created Components based Application Structure.
+      --Created components for each section such as Header, Shop Stuff, Inhabitant Journals, Latest Adventures, Footer.
+      --In this project Latest Adventures, Single Adventure View and more Adventures are live/active section, it updates live through Get and Post method. The Blogs(journals) data which are posted in the form section are retrieved by the Get method and printed in the Latest Adventure grid and More adventure (adventure list). When clicked on "Read More" on a particular Latest Adventure the Single View of that Blog(journal) opens.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  -Retrieving the data using Get method and posting the data using the Post method. Using Original Url (Cody's) to get and post the data.
